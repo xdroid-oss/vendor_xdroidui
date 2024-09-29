@@ -17,6 +17,11 @@
 # PRODUCT_PACKAGES += \
 #     xdCore
 
+# LMO Freeform
+PRODUCT_PACKAGES += \
+    LMOFreeform \
+    LMOFreeformSidebar
+
 # Springboard
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
