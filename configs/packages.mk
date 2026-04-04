@@ -14,8 +14,8 @@
 # limitations under the License.
 
 # xdroid Additions
-PRODUCT_PACKAGES += \
-    xdCore
+# PRODUCT_PACKAGES += \
+#     xdCore
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
