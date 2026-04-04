@@ -13,12 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ROOT_PATH := $(call my-dir)
 XDUI_PATH := vendor/xdroidui
 
 include $(XDUI_PATH)/configs/overlays.mk
 include $(XDUI_PATH)/configs/packages.mk
 include $(XDUI_PATH)/configs/props.mk
 include $(XDUI_PATH)/configs/ui.mk
-
-include $(call all-subdir-makefiles,$(ROOT_PATH))

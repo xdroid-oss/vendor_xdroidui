@@ -20,38 +20,68 @@ PRODUCT_PACKAGE_OVERLAYS += \
     $(XDUI_PATH)/overlay/common
 
 PRODUCT_PACKAGES += \
-    NetworkStackOverlay \
-    FilesOverlay \
-    PixelLauncherCustomOverlay \
-    PixelDocumentsUIGoogleOverlay \
-    BuiltInPrintServiceOverlay \
-    GooglePermissionControllerOverlay \
-    PixelConfigOverlayCommon \
-    TeleServiceOverlay \
-    CaptivePortalLoginOverlay \
-    GoogleWebViewOverlay \
-    TelecomOverlay \
-    CellBroadcastServiceOverlay \
-    SettingsGoogleOverlay \
-    SettingsGoogleOverlayPixel2022 \
-    SettingsGoogleProviderOverlay \
-    TelephonyProviderOverlay \
-    ContactsProviderOverlay \
-    PixelConfigOverlay2018 \
-    SettingsProviderOverlay \
-    TraceurOverlay \
-    PixelConfigOverlay2019 \
-    PixelConfigOverlay2019Midyear \
-    PixelConfigOverlay2021 \
-    PixelSetupWizardOverlay \
-    PixelFwResOverlay \
-    GoogleConfigOverlay \
-    SystemUIGoogleOverlay \
-    CustomPixelLauncherOverlay \
     XDSetupOverlay \
-    NavigationBarModeGesturalOverlayFS \
-    MediaProviderOverlay \
-    NoCombinedIconsOverlay \
-    StorageManagerGoogleOverlay \
-    FlipendoOverlay \
-    NoCombinedIconsOverlay
+    GoogleDialerConfOverlay
+
+# Icon Packs
+PRODUCT_PACKAGES += \
+    IconPackCircularAndroidOverlay \
+    IconPackCircularLauncherOverlay \
+    IconPackCircularSettingsOverlay \
+    IconPackCircularSystemUIOverlay \
+    IconPackCircularThemePickerOverlay \
+    IconPackVictorAndroidOverlay \
+    IconPackVictorLauncherOverlay \
+    IconPackVictorSettingsOverlay \
+    IconPackVictorSystemUIOverlay \
+    IconPackVictorThemePickerOverlay \
+    IconPackSamAndroidOverlay \
+    IconPackSamLauncherOverlay \
+    IconPackSamSettingsOverlay \
+    IconPackSamSystemUIOverlay \
+    IconPackSamThemePickerOverlay \
+    IconPackKaiAndroidOverlay \
+    IconPackKaiLauncherOverlay \
+    IconPackKaiSettingsOverlay \
+    IconPackKaiSystemUIOverlay \
+    IconPackKaiThemePickerOverlay \
+    IconPackFilledAndroidOverlay \
+    IconPackFilledLauncherOverlay \
+    IconPackFilledSettingsOverlay \
+    IconPackFilledSystemUIOverlay \
+    IconPackFilledThemePickerOverlay \
+    IconPackRoundedAndroidOverlay \
+    IconPackRoundedLauncherOverlay \
+    IconPackRoundedSettingsOverlay \
+    IconPackRoundedSystemUIOverlay \
+    IconPackRoundedThemePickerOverlay \
+    IconPackOxygenAndroidOverlay \
+    IconPackOxygenLauncherOverlay \
+    IconPackOxygenSettingsOverlay \
+    IconPackOxygenSystemUIOverlay \
+    IconPackOxygenThemePickerOverlay \
+    IconPackOutlineAndroidOverlay \
+    IconPackOutlineSettingsOverlay \
+    IconPackOutlineSystemUIOverlay
+
+# Icon Shapes
+PRODUCT_PACKAGES += \
+    IconShapeRoundedRectOverlay \
+    IconShapeSquareOverlay \
+    IconShapeSquircleOverlay \
+    IconShapeTeardropOverlay
+
+# Lockscreen Clock Styles
+PRODUCT_PACKAGES += \
+     SystemUIClocks-BigNum \
+     SystemUIClocks-Calligraphy \
+     SystemUIClocks-Flex \
+     SystemUIClocks-Growth \
+     SystemUIClocks-Inflate \
+     SystemUIClocks-Metro \
+     SystemUIClocks-NumOverlap \
+     SystemUIClocks-Weather
+
+# Themed Icons
+PRODUCT_PACKAGES += \
+    ThemedIconsOverlay

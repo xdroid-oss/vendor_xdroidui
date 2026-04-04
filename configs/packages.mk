@@ -13,15 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
-
 # xdroid Additions
 PRODUCT_PACKAGES += \
     xdCore

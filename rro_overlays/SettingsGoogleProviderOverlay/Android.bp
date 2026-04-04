@@ -1,5 +1,0 @@
-runtime_resource_overlay {
-    name: "SettingsGoogleProviderOverlay",
-    product_specific: true,
-}
-
