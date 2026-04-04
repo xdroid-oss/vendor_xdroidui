@@ -13,10 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Repainter integration
- PRODUCT_PACKAGES += \
-    RepainterServicePriv \
-
 # Offline charger
 PRODUCT_PACKAGES += \
     charger_res_images \
@@ -26,18 +22,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
-# GameSpace
-PRODUCT_PACKAGES += \
-    GameSpace
-
 # xdroid Additions
 PRODUCT_PACKAGES += \
     xdCore
-
-# Dex preopt
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUIGoogle \
-    NexusLauncherRelease
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
@@ -45,13 +32,3 @@ PRODUCT_PACKAGES += \
     mke2fs \
     mkfs.ntfs \
     mount.ntfs
-
-# Pixel customization
-TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
-TARGET_INCLUDE_STOCK_ARCORE ?= true
-TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
-TARGET_SUPPORTS_QUICK_TAP ?= false
-
-# Repainter integration
-PRODUCT_PACKAGES += \
-    RepainterServicePriv \

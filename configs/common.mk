@@ -16,16 +16,9 @@
 ROOT_PATH := $(call my-dir)
 XDUI_PATH := vendor/xdroidui
 
+include $(XDUI_PATH)/configs/overlays.mk
+include $(XDUI_PATH)/configs/packages.mk
+include $(XDUI_PATH)/configs/props.mk
+include $(XDUI_PATH)/configs/ui.mk
+
 include $(call all-subdir-makefiles,$(ROOT_PATH))
-
-# xdroidUI Overlays
-include $(XDUI_PATH)/configs/xdroidui_overlays.mk
-
-# xdroidUI Packages
-include $(XDUI_PATH)/configs/xdroidui_packages.mk
-
-# xdroidUI Props
-include $(XDUI_PATH)/configs/xdroidui_props.mk
-
-# xdroidUI UI
-include $(XDUI_PATH)/configs/xdroidui_ui.mk

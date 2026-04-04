@@ -13,22 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# build.prop entrys
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.wallpapers_loc_request_suw=true
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.support_one_handed_mode=true
-
 # Use gestures by default
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
-
-# IME
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.ime.bs_theme=true \
-    ro.com.google.ime.system_lm_dir=/system/product/usr/share/ime/google/d3_lms \
-    ro.com.google.ime.theme_id=5
 
 # SetupWizard configuration
 PRODUCT_PRODUCT_PROPERTIES += \

@@ -13,20 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(XDUI_PATH)/overlay
 
 PRODUCT_PACKAGE_OVERLAYS += \
     $(XDUI_PATH)/overlay/common
 
-# XDSettingsOverlay
-ifdef XDROID_MAINTAINER
-PRODUCT_PACKAGES += \
-    SettingsXDOverlay
-endif
-
-# RRO Overlays
 PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     FilesOverlay \
@@ -63,7 +55,3 @@ PRODUCT_PACKAGES += \
     StorageManagerGoogleOverlay \
     FlipendoOverlay \
     NoCombinedIconsOverlay
-
-# NexusLauncher resources
-PRODUCT_PACKAGES += \
-    NexusLauncherResOverlay
