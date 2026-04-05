@@ -14,24 +14,20 @@
 # limitations under the License.
 
 # xd. Bootanimation
-ifeq ($(XDROID_BOOT),)
-$(warning "xdroidUI: Using xd. Dark Bootanimation legacy")
+ifeq ($(TARGET_BOOT_ANIMATION_RES),)
+$(warning "xdroidui: TARGET_BOOT_ANIMATION_RES not defined, using legacy")
     PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_legacy.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 else
-ifeq ($(XDROID_BOOT),480)
-$(warning "xdroidUI: Using xd. Dark Bootanimation 480p")
+ifeq ($(TARGET_BOOT_ANIMATION_RES),480)
     PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_480.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
-ifeq ($(XDROID_BOOT),720)
-$(warning "xdroidUI: Using xd. Dark Bootanimation 720p")
+ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
     PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_720.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
-ifeq ($(XDROID_BOOT),1080)
-$(warning "xdroidUI: Using xd. Dark Bootanimation 1080p")
+ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
     PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
-ifeq ($(XDROID_BOOT),1440)
-$(warning "xdroidUI: Using xd. Dark Bootanimation 1440p")
+ifeq ($(TARGET_BOOT_ANIMATION_RES),1440)
     PRODUCT_COPY_FILES += $(XDUI_PATH)/bootanimation/xd_boot_1440.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
 endif
