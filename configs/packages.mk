@@ -16,10 +16,3 @@
 # xdroid Additions
 # PRODUCT_PACKAGES += \
 #     xdCore
-
-# Filesystems tools
-PRODUCT_PACKAGES += \
-    fsck.ntfs \
-    mke2fs \
-    mkfs.ntfs \
-    mount.ntfs
