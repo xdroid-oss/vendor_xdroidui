@@ -20,6 +20,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
     $(XDUI_PATH)/overlay/common
 
 PRODUCT_PACKAGES += \
+    SpringboardOverlay \
     XDSetupOverlay \
     GoogleDialerConfOverlay
 

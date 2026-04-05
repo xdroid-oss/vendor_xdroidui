@@ -16,3 +16,18 @@
 # xdroid Additions
 # PRODUCT_PACKAGES += \
 #     xdCore
+
+# Springboard
+ifeq ($(PRODUCT_TYPE), go)
+PRODUCT_PACKAGES += \
+    SpringboardQuickStepGo
+
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SpringboardQuickStepGo
+else
+PRODUCT_PACKAGES += \
+    SpringboardQuickStep
+
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SpringboardQuickStep
+endif
