@@ -56,13 +56,6 @@ PRODUCT_COPY_FILES += \
     $(XDUI_PATH)/media/audio/ui/LowBattery.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/LowBattery.ogg \
     $(XDUI_PATH)/media/audio/ui/Unlock.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Unlock.ogg
 
-# Set default ringtone and notification sound
-ifneq ($(WITH_GMS),true)
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.notification_sound=Brightside.ogg \
-    ro.config.ringtone=Sticks.ogg
-endif
-
 # Fonts
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(XDUI_PATH)/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
